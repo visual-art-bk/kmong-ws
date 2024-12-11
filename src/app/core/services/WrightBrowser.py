@@ -95,7 +95,7 @@ class WrightBrowser:
 
             return {
                 "headless": headless_mode,
-                "proxy": proxy,
+                # "proxy": proxy,
                 "executable_path": executable_path,
                 "args": [
                     "--disable-blink-features=AutomationControlled",  # 자동화 탐지 방지
@@ -117,7 +117,7 @@ class WrightBrowser:
         from pathlib import Path
 
         drivers_path = (
-            Path.cwd() / "drivers" / "ms-playwright" / "chromium-1140" / "chrome-win"
+            Path.cwd() / ".drivers" / "ms-playwright" / "chromium-1140" / "chrome-win"
         )
 
         browser_path = drivers_path / "chrome.exe"
