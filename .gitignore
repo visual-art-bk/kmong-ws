@@ -1,1 +1,5 @@
 .linu_env_km
+.drivers
+.vscode
+
+*/**/__pycache__
